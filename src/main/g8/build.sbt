@@ -1,15 +1,13 @@
 // Turn this project into a Scala.js project by importing these settings
-scalaJSSettings
+
+enablePlugins(ScalaJSPlugin)
 
 name := "$name$"
 
 version := "$version$"
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.5"
 
-ScalaJSKeys.persistLauncher := true
-
-ScalaJSKeys.persistLauncher in Test := false
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules.scalajs" %%% "scalajs-jquery" % "0.6",
