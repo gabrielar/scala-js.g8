@@ -1,3 +1,3 @@
 
-addSbtPlugin("net.databinder.giter8" %% "giter8-plugin" % "$giter8_version$")
+addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.0")
 
