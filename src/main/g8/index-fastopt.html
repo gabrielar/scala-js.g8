@@ -9,14 +9,16 @@
 <h1>Example Scala.js application - optimized version</h1>
 
 <p>After having compiled and optimized properly the code for the application
-(using `sbt optimizeJS`), you should see "It works" here below.
+(using `sbt fastOptJS`), you should see "It works" here below.
 See README.md for detailed explanations.</p>
 
 <div id="playground">
 </div>
 
 <script type="text/javascript" src="./target/scala-2.11/$name;format="normalize"$-fastopt.js"></script>
-<script type="text/javascript" src="./target/scala-2.11/$name;format="normalize"$-launcher.js"></script>
+<script type="text/javascript">
+    $packageName$.$className$.main();
+</script>
 
 </body>
 </html>
